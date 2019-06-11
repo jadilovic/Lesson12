@@ -6,7 +6,7 @@ public class QuotientWithException {
 
 	public static int quotient(int fnum, int snum){
 		if(snum == 0)
-			throw new ArithmeticException("Cannot be zero");
+			throw new ArithmeticException("Not be zero");
 	
 			return fnum / snum;
 	}
@@ -27,6 +27,7 @@ public class QuotientWithException {
 		}
 		catch(ArithmeticException ex){
 			System.out.println("Exception: an integer cannot be divided by zero ");
+			System.out.println(ex.getMessage());
 		}
 		
 		System.out.println("Execution continues");
