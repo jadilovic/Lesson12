@@ -31,6 +31,8 @@ public class Test {
 			catch (Exception ex) {
 				System.out.println(ex.getMessage());
 			}
+		
+		System.out.println(1.0 / 0);
 	}
 }
 
