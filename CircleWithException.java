@@ -22,7 +22,7 @@ public class CircleWithException {
 	/**
 	 * @param radius the radius to set
 	 */
-	public void setRadius(double radius) throws IllegalArgumentException {
+	public void setRadius(double radius) throws IllegalArgumentException{
 		if(radius >= 0)
 		this.radius = radius;
 		else
