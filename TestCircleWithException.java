@@ -1,5 +1,7 @@
 package vjezba11_1;
 
+import java.util.Scanner;
+
 public class TestCircleWithException {
 
 	public static void main(String[] args) {
@@ -79,6 +81,12 @@ public class TestCircleWithException {
 				} catch (Exception ex){
 					System.out.println(ex.getMessage());
 				}
+				
+				Scanner input = new Scanner(System.in);
+				
+				System.out.println("Please enter a string");
+				String word = input.nextLine();
+				System.out.println(isNumeric(word));
 		}
 			static void method() throws Exception {
 				System.out.println(1 / 0);
@@ -90,4 +98,9 @@ public class TestCircleWithException {
 				else
 					System.out.println("Higher than 40 which is OK");
 				}
+			
+			
+			public static boolean isNumeric(String token) {
+				return token.matches("-?\\d+(\\.\\d+)?");
+			}
 	}
