@@ -20,5 +20,9 @@ public class ReadData {
 				System.out.println(name + " " + in + " " + last + " " + num);
 			}
 		}
+		
+		Scanner input = new Scanner("13 14");
+		int sum = input.nextInt() + input.nextInt();
+		System.out.println("Sum is " + sum);
 	}
 }
