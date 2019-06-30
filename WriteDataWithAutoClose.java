@@ -20,7 +20,7 @@ public class WriteDataWithAutoClose {
 			unos.print("Willz T Smith ");
 			unos.println(77);
 			unos.print("Bruce K Lee ");
-			unos.println(66);
+			unos.println(99);
 		}
 	}
 }
